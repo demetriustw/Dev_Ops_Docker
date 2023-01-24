@@ -1,0 +1,20 @@
+apt-get update
+apt-get install -y python3
+
+*****************************************
+Might need to do this though
+*****************************************
+
+apt-get update
+apt-get install -y python
+apt-get install python-pip
+
+*****************************************
+The rest should be the same ether way
+*****************************************
+
+pip install flask
+cat > /opt/app.py
+ ^ Create/Copy application code to /opt/app.py
+
+FLASK_APP=app.py flask run --host=0.0.0.0
